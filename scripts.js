@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("mouseenter", () => {
       btn.style.transform = "scale(1.05)";
       btn.style.boxShadow = "0 8px 20px rgba(0,0,0,0.2)";
-      btn.style.transition = "all 0.3s ease";
+      btn.style.transition = "all 0.6s ease";
     });
 
     btn.addEventListener("mouseleave", () => {
