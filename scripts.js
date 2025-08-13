@@ -1,42 +1,26 @@
-// Espera a que el DOM esté completamente cargado antes de ejecutar el script
+// Inicializar animaciones de scroll con AOS
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Obtener una referencia al elemento wrapper
-  // document.querySelector() devuelve el primer elemento que coincide con el selector CSS especificado.
-  const wrapper = document.querySelector(".wrapper");
-  const toggleButton = document.getElementById("toggleWrapper");
+  // Configuración de AOS
+  AOS.init({
+    duration: 800, // Duración de la animación
+    offset: 100,   // Distancia desde el viewport antes de iniciar
+    once: true,    // Animar solo una vez
+    easing: "ease-out-cubic"
+  });
 
-  // Verificar si el wrapper fue encontrado
-  if (wrapper) {
-    console.log("Wrapper encontrado:", wrapper);
+  // Animación hover personalizada para botones
+  const buttons = document.querySelectorAll("a.bg-indigo-500, a.bg-green-500, a.bg-white, a.border-indigo-400");
 
-    // Ejemplo 1: Cambiar el color de fondo después de 3 segundos
-    // setTimeout(() => {
-    //   wrapper.style.backgroundColor = '#6a0dad'; // Un morado oscuro
-    //   console.log('Color de fondo del wrapper cambiado a morado.');
-    // }, 3000);
-
-    // Ejemplo 2: Alternar una clase CSS para cambiar el tamaño y el estilo
-    if (toggleButton) {
-      toggleButton.addEventListener("click", () => {
-        // .classList.toggle() añade la clase si no está presente, y la quita si sí lo está.
-        wrapper.classList.toggle("expanded");
-        if (wrapper.classList.contains("expanded")) {
-          console.log("Wrapper expandido.");
-        } else {
-          console.log("Wrapper reducido.");
-        }
-      });
-    }
-
-    // Puedes añadir más lógica aquí para interactuar con el wrapper
-    // Por ejemplo, escuchar eventos de clic en las imágenes dentro del wrapper
-    const images = wrapper.querySelectorAll("img");
-    images.forEach((img) => {
-      img.addEventListener("click", (event) => {
-        alert(`¡Hiciste clic en una imagen! Fuente: ${event.target.src}`);
-      });
+  buttons.forEach(btn => {
+    btn.addEventListener("mouseenter", () => {
+      btn.style.transform = "scale(1.05)";
+      btn.style.boxShadow = "0 8px 20px rgba(0,0,0,0.2)";
+      btn.style.transition = "all 0.3s ease";
     });
-  } else {
-    console.error('No se encontró el elemento con la clase "wrapper".');
-  }
+
+    btn.addEventListener("mouseleave", () => {
+      btn.style.transform = "scale(1)";
+      btn.style.boxShadow = "none";
+    });
+  });
 });

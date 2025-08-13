@@ -1,145 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Desarrollo de Páginas Web – Tomas Gonzalez</title>
-  <meta name="description" content="Desarrollo profesional de páginas web para potenciar tu negocio con diseño moderno y funcional." />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Paginas Web – Tomas Gonzalez" />
-  <meta property="og:description" content="Sitios web rápidos, optimizados y listos para tus clientes." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" href="/assets/favicon.ico" />
-</head>
-<body class="bg-gray-900 text-white font-sans">
-  <!-- Header -->
-  <header class="max-w-6xl mx-auto flex items-center justify-between py-6 px-4">
-    <a href="#inicio" class="text-2xl font-bold text-indigo-400 hover:text-indigo-300 transition">TU LOGO / NOMBRE</a>
-    <nav class="hidden md:flex space-x-6">
-      <a href="#servicios" class="hover:text-indigo-300">Servicios</a>
-      <a href="#precios" class="hover:text-indigo-300">Precios</a>
-      <a href="#testimonios" class="hover:text-indigo-300">Testimonios</a>
-      <a href="https://wa.me/56TU_NUMERO?text=Hola%20me%20interesa%20cotizar" class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg font-semibold transition">Cotizar</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- En el <head> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <title>Desarrollo de Páginas Web – Tomas Gonzalez</title>
+    <meta
+      name="description"
+      content="Desarrollo profesional de páginas web para potenciar tu negocio con diseño moderno y funcional."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Paginas Web – Tomas Gonzalez" />
+    <meta
+      property="og:description"
+      content="Sitios web rápidos, optimizados y listos para tus clientes."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/assets/favicon.ico" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header
+      class="max-w-6xl mx-auto flex items-center justify-between py-6 px-4"
+    >
+      <a
+        href="#inicio"
+        class="text-2xl font-bold text-indigo-400 hover:text-indigo-300 transition"
+        >TU LOGO / NOMBRE</a
+      >
+      <nav class="hidden md:flex space-x-6">
+        <a href="#servicios" class="hover:text-indigo-300">Servicios</a>
+        <a href="#precios" class="hover:text-indigo-300">Precios</a>
+        <a href="#testimonios" class="hover:text-indigo-300">Testimonios</a>
+        <a
+          href="https://wa.me/56TU_NUMERO?text=Hola%20me%20interesa%20cotizar"
+          class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg font-semibold transition"
+          >Cotizar</a
+        >
+      </nav>
+    </header>
 
-  <!-- Hero -->
-  <main id="inicio" class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-4 py-12">
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-        Ofrezco <span class="text-indigo-400">Desarrollo de páginas web</span> para <span class="text-indigo-400">TU CLIENTE IDEAL</span>
-      </h1>
-      <p class="mt-4 text-gray-300">Creo sitios rápidos, seguros y visualmente atractivos para que destaques online.</p>
-      <div class="mt-6 flex flex-wrap gap-4">
-        <a href="https://wa.me/56TU_NUMERO?text=Hola%20me%20interesa%20cotizar" class="bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-lg font-semibold transition">¡Quiero cotizar!</a>
-        <a href="mailto:tucorreo@dominio.com" class="border border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-gray-900 px-6 py-3 rounded-lg font-semibold transition">Escríbeme por correo</a>
+    <!-- Hero -->
+    <main
+      id="inicio"
+      class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-4 py-12"
+    >
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Ofrezco
+          <span class="text-indigo-400">Desarrollo de páginas web</span> para
+          <span class="text-indigo-400">TU CLIENTE IDEAL</span>
+        </h1>
+        <p class="mt-4 text-gray-300">
+          Creo sitios rápidos, seguros y visualmente atractivos para que
+          destaques online.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-4">
+          <a
+            href="https://wa.me/56TU_NUMERO?text=Hola%20me%20interesa%20cotizar"
+            class="bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >¡Quiero cotizar!</a
+          >
+          <a
+            href="mailto:tucorreo@dominio.com"
+            class="border border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-gray-900 px-6 py-3 rounded-lg font-semibold transition"
+            >Escríbeme por correo</a
+          >
+        </div>
+        <p class="mt-4 text-gray-400 text-sm">
+          Atiendo en CIUDAD/PAÍS • Horario: L–V 9:00–18:00
+        </p>
       </div>
-      <p class="mt-4 text-gray-400 text-sm">Atiendo en CIUDAD/PAÍS • Horario: L–V 9:00–18:00</p>
-    </div>
-    <div>
-      <img src="assets/tu-imagen-principal.jpg" alt="Imagen representativa de tu servicio" class="rounded-lg shadow-lg" />
-    </div>
-  </main>
+      <div>
+        <img
+          src="assets/tu-imagen-principal.jpg"
+          alt="Imagen representativa de tu servicio"
+          class="rounded-lg shadow-lg"
+        />
+      </div>
+    </main>
 
-  <!-- Servicios -->
-  <section id="servicios" class="max-w-6xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-6">Lo que hago</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <article class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">Servicio A</h3>
-        <p class="text-gray-300">Resultado concreto que obtiene el cliente.</p>
-      </article>
-      <article class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">Servicio B</h3>
-        <p class="text-gray-300">Resultado concreto que obtiene el cliente.</p>
-      </article>
-      <article class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">Servicio C</h3>
-        <p class="text-gray-300">Resultado concreto que obtiene el cliente.</p>
-      </article>
-    </div>
-  </section>
+    <!-- Servicios -->
+    <section id="servicios" class="max-w-6xl mx-auto px-4 py-12" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">Lo que hago</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article
+          class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition"
+        >
+          <h3 class="text-xl font-semibold mb-2 text-indigo-400">Servicio A</h3>
+          <p class="text-gray-300">
+            Resultado concreto que obtiene el cliente.
+          </p>
+        </article>
+        <article
+          class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition"
+        >
+          <h3 class="text-xl font-semibold mb-2 text-indigo-400">Servicio B</h3>
+          <p class="text-gray-300">
+            Resultado concreto que obtiene el cliente.
+          </p>
+        </article>
+        <article
+          class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition"
+        >
+          <h3 class="text-xl font-semibold mb-2 text-indigo-400">Servicio C</h3>
+          <p class="text-gray-300">
+            Resultado concreto que obtiene el cliente.
+          </p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Beneficios -->
-  <section class="max-w-6xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-6">Beneficios</h2>
-    <ul class="space-y-2 text-gray-300">
-      <li>✅ Beneficio 1 (claro y medible)</li>
-      <li>✅ Beneficio 2</li>
-      <li>✅ Beneficio 3</li>
-    </ul>
-  </section>
+    <!-- Beneficios -->
+    <section class="max-w-6xl mx-auto px-4 py-12" data-aos="fade-right">
+      <h2 class="text-3xl font-bold mb-6">Beneficios</h2>
+      <ul class="space-y-2 text-gray-300">
+        <li>✅ Beneficio 1 (claro y medible)</li>
+        <li>✅ Beneficio 2</li>
+        <li>✅ Beneficio 3</li>
+      </ul>
+    </section>
 
-  <!-- Precios -->
-  <section id="precios" class="max-w-6xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-6">Planes y precios</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <article class="bg-gray-800 p-6 rounded-lg shadow flex flex-col">
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">Básico</h3>
-        <p class="text-2xl font-bold mb-4">$XX.XXX</p>
-        <ul class="text-gray-300 flex-grow mb-4">
-          <li>Incluye X</li>
-          <li>Incluye Y</li>
-        </ul>
-        <a class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg font-semibold text-center transition" href="https://wa.me/56TU_NUMERO?text=Quiero%20el%20plan%20B%C3%A1sico">Elegir</a>
-      </article>
-      <article class="bg-indigo-600 p-6 rounded-lg shadow flex flex-col">
-        <h3 class="text-xl font-semibold mb-2 text-white">Recomendado</h3>
-        <p class="text-2xl font-bold mb-4 text-white">$YY.YYY</p>
-        <ul class="text-white flex-grow mb-4">
-          <li>Incluye A</li>
-          <li>Incluye B</li>
-          <li>Soporte prioritario</li>
-        </ul>
-        <a class="bg-white text-indigo-600 hover:bg-gray-100 px-4 py-2 rounded-lg font-semibold text-center transition" href="https://wa.me/56TU_NUMERO?text=Quiero%20el%20plan%20Recomendado">Elegir</a>
-      </article>
-      <article class="bg-gray-800 p-6 rounded-lg shadow flex flex-col">
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">Premium</h3>
-        <p class="text-2xl font-bold mb-4">$ZZ.ZZZ</p>
-        <ul class="text-gray-300 flex-grow mb-4">
-          <li>Todo lo anterior</li>
-          <li>Extra 1</li>
-        </ul>
-        <a class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg font-semibold text-center transition" href="https://wa.me/56TU_NUMERO?text=Quiero%20el%20plan%20Premium">Elegir</a>
-      </article>
-    </div>
-  </section>
+    <!-- Precios -->
+    <section id="precios" class="max-w-6xl mx-auto px-4 py-12" data-aos="flip-up">
+      <h2 class="text-3xl font-bold mb-6">Planes y precios</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-gray-800 p-6 rounded-lg shadow flex flex-col">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-400">Básico</h3>
+          <p class="text-2xl font-bold mb-4">$XX.XXX</p>
+          <ul class="text-gray-300 flex-grow mb-4">
+            <li>Incluye X</li>
+            <li>Incluye Y</li>
+          </ul>
+          <a
+            class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg font-semibold text-center transition"
+            href="https://wa.me/56TU_NUMERO?text=Quiero%20el%20plan%20B%C3%A1sico"
+            >Elegir</a
+          >
+        </article>
+        <article class="bg-indigo-600 p-6 rounded-lg shadow flex flex-col">
+          <h3 class="text-xl font-semibold mb-2 text-white">Recomendado</h3>
+          <p class="text-2xl font-bold mb-4 text-white">$YY.YYY</p>
+          <ul class="text-white flex-grow mb-4">
+            <li>Incluye A</li>
+            <li>Incluye B</li>
+            <li>Soporte prioritario</li>
+          </ul>
+          <a
+            class="bg-white text-indigo-600 hover:bg-gray-100 px-4 py-2 rounded-lg font-semibold text-center transition"
+            href="https://wa.me/56TU_NUMERO?text=Quiero%20el%20plan%20Recomendado"
+            >Elegir</a
+          >
+        </article>
+        <article class="bg-gray-800 p-6 rounded-lg shadow flex flex-col">
+          <h3 class="text-xl font-semibold mb-2 text-indigo-400">Premium</h3>
+          <p class="text-2xl font-bold mb-4">$ZZ.ZZZ</p>
+          <ul class="text-gray-300 flex-grow mb-4">
+            <li>Todo lo anterior</li>
+            <li>Extra 1</li>
+          </ul>
+          <a
+            class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg font-semibold text-center transition"
+            href="https://wa.me/56TU_NUMERO?text=Quiero%20el%20plan%20Premium"
+            >Elegir</a
+          >
+        </article>
+      </div>
+    </section>
 
-  <!-- Testimonios -->
-  <section id="testimonios" class="max-w-6xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-6">Testimonios</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <blockquote class="bg-gray-800 p-6 rounded-lg shadow text-gray-300">
-        “Resultado real obtenido.” <cite class="block mt-2 text-indigo-400">– Cliente 1</cite>
-      </blockquote>
-      <blockquote class="bg-gray-800 p-6 rounded-lg shadow text-gray-300">
-        “Excelente experiencia.” <cite class="block mt-2 text-indigo-400">– Cliente 2</cite>
-      </blockquote>
-      <blockquote class="bg-gray-800 p-6 rounded-lg shadow text-gray-300">
-        “Volvería a contratar.” <cite class="block mt-2 text-indigo-400">– Cliente 3</cite>
-      </blockquote>
-    </div>
-  </section>
+    <!-- Testimonios -->
+    <section id="testimonios" class="max-w-6xl mx-auto px-4 py-12" data-aos="fade-down">
+      <h2 class="text-3xl font-bold mb-6">Testimonios</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="bg-gray-800 p-6 rounded-lg shadow text-gray-300">
+          “Resultado real obtenido.”
+          <cite class="block mt-2 text-indigo-400">– Cliente 1</cite>
+        </blockquote>
+        <blockquote class="bg-gray-800 p-6 rounded-lg shadow text-gray-300">
+          “Excelente experiencia.”
+          <cite class="block mt-2 text-indigo-400">– Cliente 2</cite>
+        </blockquote>
+        <blockquote class="bg-gray-800 p-6 rounded-lg shadow text-gray-300">
+          “Volvería a contratar.”
+          <cite class="block mt-2 text-indigo-400">– Cliente 3</cite>
+        </blockquote>
+      </div>
+    </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="max-w-6xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold mb-6">Contacto</h2>
-    <p class="text-gray-300 mb-4">¿Listo para conversar? Escríbeme:</p>
-    <div class="flex flex-wrap gap-4">
-      <a href="https://wa.me/56TU_NUMERO?text=Hola%20me%20interesa%20cotizar" class="bg-green-500 hover:bg-green-400 text-white px-6 py-3 rounded-lg font-semibold transition">WhatsApp</a>
-      <a href="mailto:tucorreo@dominio.com?subject=Cotización%20servicio" class="bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-lg font-semibold transition">Correo</a>
-    </div>
-    <p class="mt-4 text-gray-400 text-sm">Tip: también puedes usar servicios como Formspree si quieres un formulario sin backend.</p>
-  </section>
+    <!-- Contacto -->
+    <section id="contacto" class="max-w-6xl mx-auto px-4 py-12" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">Contacto</h2>
+      <p class="text-gray-300 mb-4">¿Listo para conversar? Escríbeme:</p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="https://wa.me/56TU_NUMERO?text=Hola%20me%20interesa%20cotizar"
+          class="bg-green-500 hover:bg-green-400 text-white px-6 py-3 rounded-lg font-semibold transition"
+          >WhatsApp</a
+        >
+        <a
+          href="mailto:tucorreo@dominio.com?subject=Cotización%20servicio"
+          class="bg-indigo-500 hover:bg-indigo-400 text-white px-6 py-3 rounded-lg font-semibold transition"
+          >Correo</a
+        >
+      </div>
+      <p class="mt-4 text-gray-400 text-sm">
+        Tip: también puedes usar servicios como Formspree si quieres un
+        formulario sin backend.
+      </p>
+    </section>
 
-  <!-- Footer -->
-  <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-700 text-center text-gray-500">
-    <small>© <span id="year"></span> TU NOMBRE/NEGOCIO. Todos los derechos reservados.</small>
-  </footer>
+    <!-- Footer -->
+    <footer
+      class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-700 text-center text-gray-500"
+    >
+      <small
+        >© <span id="year"></span> TU NOMBRE/NEGOCIO. Todos los derechos
+        reservados.</small
+      >
+    </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
